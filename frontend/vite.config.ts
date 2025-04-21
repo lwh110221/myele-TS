@@ -10,6 +10,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  define: {
+    'process.env': {},
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

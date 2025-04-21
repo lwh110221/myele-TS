@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.excalidraw {
+  --color-primary: #6965db;
+  --color-primary-darker: #5753d0;
+  --color-primary-darkest: #4642c9;
+  --color-primary-light: #807ee3;
+  --color-primary-lighter: #918fea;
+}
+
+.excalidraw.theme--light {
+  --color-primary: #6965db;
+  --color-primary-darker: #5753d0;
+  --color-primary-darkest: #4642c9;
+} 
