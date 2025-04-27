@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AH</title>
     <script>
-      // 确保资源路径正确
       window.EXCALIDRAW_ASSET_PATH = "/excalidraw-assets/";
-      // 添加process定义
       window.process = {
         env: {
           NODE_ENV: 'development'
@@ -17,7 +15,7 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="App"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

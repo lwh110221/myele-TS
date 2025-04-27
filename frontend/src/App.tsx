@@ -1,5 +1,4 @@
 import React from 'react';
-import { Excalidraw } from '@excalidraw/excalidraw';
 
 const App: React.FC = () => {
   return (
@@ -9,14 +8,7 @@ const App: React.FC = () => {
       position: 'relative',
       overflow: 'hidden'
     }}>
-      <Excalidraw
-        initialData={{
-          appState: {
-            viewBackgroundColor: '#ffffff',
-          },
-        }}
-        theme="light"
-      />
+    <h1>你好</h1>
     </div>
   );
 };
