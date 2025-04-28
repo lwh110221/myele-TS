@@ -7,11 +7,13 @@ const config: () => AppConfig = () => {
     openDevTools: false,
     singleLock: true,
     windowsOption: {
-      title: 'electron-egg',
-      width: 980,
-      height: 650,
-      minWidth: 400,
-      minHeight: 300,
+      title: 'Excalidraw桌面版',
+      skipTaskbar: true,
+      opacity: 1.0,
+      width: 1280,
+      height: 720,
+      minWidth: 700,
+      minHeight: 400,
       webPreferences: {
         contextIsolation: false,
         nodeIntegration: true,
@@ -26,10 +28,6 @@ const config: () => AppConfig = () => {
       appLogName: 'ee.log',
       coreLogName: 'ee-core.log',
       errorLogName: 'ee-error.log',
-    },
-    remote: {
-      enable: false,
-      url: 'http://electron-egg.kaka996.com/',
     },
     socketServer: {
       enable: true,

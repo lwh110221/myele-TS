@@ -1,9 +1,13 @@
 import { ElectronEgg } from 'ee-core';
 import { Lifecycle } from './preload/lifecycle';
 import { preload } from './preload';
+import { Menu } from 'electron';
 
 // New app
 const app = new ElectronEgg();
+
+// Remove menu bar
+Menu.setApplicationMenu(null);
 
 // Register lifecycle
 const life = new Lifecycle();
