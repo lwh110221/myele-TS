@@ -5,7 +5,7 @@
   "main": "./public/electron/main.js",
   "scripts": {
     "dev": "ee-bin dev",
-    "build": "npm run build-frontend && npm run build-electron && ee-bin encrypt",
+    "build": "npm run build-electron && ee-bin encrypt",
     "start": "ee-bin start",
     "dev-frontend": "ee-bin dev --serve=frontend",
     "build-frontend": "ee-bin build --cmds=frontend && ee-bin move --flag=frontend_dist",

@@ -10,8 +10,8 @@ module.exports = {
   dev: {
     frontend: {
       directory: './frontend',
-      cmd: 'npm',
-      args: ['run', 'dev'],
+      cmd: 'yarn',
+      args: ['start'],
       port: 8080,
     },
     electron: {
@@ -30,8 +30,8 @@ module.exports = {
   build: {
     frontend: {
       directory: './frontend',
-      cmd: 'npm',
-      args: ['run', 'build'],
+      cmd: 'yarn',
+      args: ['build'],
     },
     electron: {
       type: 'typescript',
@@ -70,7 +70,7 @@ module.exports = {
    */
   move: {
     frontend_dist: {
-      src: './frontend/dist',
+      src: './frontend/excalidraw-app/build',
       dest: './public/dist'
     },
   },  
