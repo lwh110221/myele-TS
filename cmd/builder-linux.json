@@ -1,5 +1,5 @@
 {
-  "productName": "Excalidraw桌面版",
+  "productName": "Excalidraw",
   "appId": "com.excalidraw.desktop",
   "copyright": "© 2025 Excalidraw.",
   "directories": {
@@ -29,11 +29,13 @@
     }
   ],
   "linux": {
-    "icon": "build/icons/icon.icns",
+    "icon": "build/icons",
     "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
+    "category": "Utility",
     "target": [
       "deb"
-    ],
-    "category": "Utility"
-  }
+    ]
+  },
+  "buildDependenciesFromSource": true,
+  "npmRebuild": true
 }

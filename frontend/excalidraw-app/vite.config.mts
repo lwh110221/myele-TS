@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
   const envVars = loadEnv(mode, `../`);
   // https://vitejs.dev/config/
   return {
+    base: "./",
     server: {
       port: Number(envVars.VITE_APP_PORT || 3000),
       // open the browser
@@ -140,7 +141,7 @@ export default defineConfig(({ mode }) => {
         },
 
         workbox: {
-          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 增加到 5MB
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
           // don't precache fonts, locales and separate chunks
           globIgnores: [
             "fonts.css",
@@ -255,38 +256,6 @@ export default defineConfig(({ mode }) => {
               ],
             },
           },
-          screenshots: [
-            {
-              src: "/screenshots/virtual-whiteboard.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-            {
-              src: "/screenshots/wireframe.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-            {
-              src: "/screenshots/illustration.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-            {
-              src: "/screenshots/shapes.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-            {
-              src: "/screenshots/collaboration.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-            {
-              src: "/screenshots/export.png",
-              type: "image/png",
-              sizes: "462x945",
-            },
-          ],
         },
       }),
       createHtmlPlugin({

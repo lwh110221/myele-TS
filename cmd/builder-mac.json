@@ -33,5 +33,7 @@
     "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
     "darkModeSupport": true,
     "hardenedRuntime": false
-  }
+  },
+  "buildDependenciesFromSource": true,
+  "npmRebuild": true
 }

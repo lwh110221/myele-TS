@@ -1,5 +1,5 @@
 {
-  "productName": "Excalidraw桌面版",
+  "productName": "Excalidraw",
   "appId": "com.excalidraw.desktop",
   "copyright": "© 2025 Excalidraw.",
   "directories": {
@@ -14,9 +14,7 @@
     "!frontend/",
     "!logs/",
     "!out/",
-    "public/dist/**/*",
-    "public/images/**/*",
-    "public/electron/**/*"
+    "public/dist/**/*"
   ],
   "extraResources": {
     "from": "build/extraResources/",
@@ -31,7 +29,7 @@
     "installerHeaderIcon": "build/icons/icon.ico",
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "Excalidraw桌面版"
+    "shortcutName": "Excalidraw"
   },
   "publish": [
     {
@@ -47,5 +45,7 @@
         "target": "nsis"
       }
     ]
-  }
+  },
+  "buildDependenciesFromSource": true,
+  "npmRebuild": true
 }

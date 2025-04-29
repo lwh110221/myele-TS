@@ -82,7 +82,7 @@ module.exports = {
   start: {
     directory: './',
     cmd: 'electron',
-    args: ['.', '--env=prod']
+    args: ['.', '--env=local', '--debugger=false']
   },
 
   /**
@@ -91,38 +91,16 @@ module.exports = {
   encrypt: {
     frontend: {
       type: 'none',
-      files: [
-        './public/dist/**/*.(js|json)',
-      ],
-      cleanFiles: ['./public/dist'],
-      confusionOptions: {
-        compact: true,      
-        stringArray: true,
-        stringArrayEncoding: ['none'],
-        stringArrayCallsTransform: true,
-        numbersToExpressions: true,
-        target: 'browser',
-      }
+      files: [],
+      cleanFiles: [],
+      confusionOptions: {}
     },
     electron: {
-      type: 'confusion',
-      files: [
-        './public/electron/**/*.(js|json)',
-      ],
-      cleanFiles: ['./public/electron'],
-      specificFiles: [
-        './public/electron/main.js',
-        './public/electron/preload/bridge.js',
-      ],
-      confusionOptions: {
-        compact: true,      
-        stringArray: true,
-        stringArrayEncoding: ['none'],
-        deadCodeInjection: false,
-        stringArrayCallsTransform: true,
-        numbersToExpressions: true,
-        target: 'node',
-      }
+      type: 'none',
+      files: [],
+      cleanFiles: [],
+      specificFiles: [],
+      confusionOptions: {}
     }
   }, 
 };

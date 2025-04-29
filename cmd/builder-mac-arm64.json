@@ -1,5 +1,5 @@
 {
-  "productName": "Excalidraw桌面版",
+  "productName": "Excalidraw",
   "appId": "com.excalidraw.desktop",
   "copyright": "© 2025 Excalidraw.",
   "directories": {
@@ -25,7 +25,7 @@
   "publish": [
     {
       "provider": "generic",
-      "url": ""
+      "url": "https://github.com/excalidraw/excalidraw"
     }
   ],
   "mac": {
@@ -33,5 +33,7 @@
     "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
     "darkModeSupport": true,
     "hardenedRuntime": false
-  }
+  },
+  "buildDependenciesFromSource": true,
+  "npmRebuild": true
 }

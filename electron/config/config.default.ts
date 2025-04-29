@@ -17,9 +17,11 @@ const config: () => AppConfig = () => {
       webPreferences: {
         contextIsolation: false,
         nodeIntegration: true,
+        webSecurity: false,
+        allowRunningInsecureContent: true,
       },
       frame: true,
-      show: false,
+      show: true,
       icon: path.join(getBaseDir(), 'public', 'images', 'logo-32.png'),
     },
     logger: {
