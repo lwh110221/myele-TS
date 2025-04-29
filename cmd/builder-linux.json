@@ -1,7 +1,7 @@
 {
-  "productName": "ee",
-  "appId": "com.bilibili.ee",
-  "copyright": "© 2025 duola Technology Co., Ltd.",
+  "productName": "Excalidraw桌面版",
+  "appId": "com.excalidraw.desktop",
+  "copyright": "© 2025 Excalidraw.",
   "directories": {
     "output": "out"
   },
@@ -14,8 +14,7 @@
     "!frontend/",
     "!logs/",
     "!out/",
-    "!go/",
-    "!python/"
+    "public/dist/**/*"
   ],
   "extraResources": [
     {
@@ -26,7 +25,7 @@
   "publish": [
     {
       "provider": "generic",
-      "url": ""
+      "url": "https://github.com/excalidraw/excalidraw"
     }
   ],
   "linux": {

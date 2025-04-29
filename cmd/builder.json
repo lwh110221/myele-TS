@@ -1,7 +1,7 @@
 {
-  "productName": "ee",
-  "appId": "com.electron.ee",
-  "copyright": "© 2025 duola Technology Co., Ltd.",
+  "productName": "Excalidraw桌面版",
+  "appId": "com.excalidraw.desktop",
+  "copyright": "© 2025 Excalidraw.",
   "directories": {
     "output": "out"
   },
@@ -14,8 +14,9 @@
     "!frontend/",
     "!logs/",
     "!out/",
-    "!go/",
-    "!python/"
+    "public/dist/**/*",
+    "public/images/**/*",
+    "public/electron/**/*"
   ],
   "extraResources": {
     "from": "build/extraResources/",
@@ -30,12 +31,12 @@
     "installerHeaderIcon": "build/icons/icon.ico",
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "ee"
+    "shortcutName": "Excalidraw桌面版"
   },
   "publish": [
     {
       "provider": "generic",
-      "url": "https://github.com/wallace5303/electron-egg"
+      "url": "https://github.com/excalidraw/excalidraw"
     }
   ],
   "win": {

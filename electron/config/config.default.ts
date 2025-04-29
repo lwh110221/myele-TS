@@ -4,7 +4,7 @@ import { type AppConfig } from 'ee-core/config';
 
 const config: () => AppConfig = () => {
   return {
-    openDevTools: false,
+    openDevTools: true,
     singleLock: true,
     windowsOption: {
       title: 'Excalidraw桌面版',

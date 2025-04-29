@@ -1,6 +1,6 @@
 {
   "name": "excalidraw-desktop",
-  "version": "4.1.0",
+  "version": "1.0.0",
   "description": "Excalidraw 桌面版",
   "main": "./public/electron/main.js",
   "scripts": {
