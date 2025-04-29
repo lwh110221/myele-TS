@@ -30,7 +30,7 @@ class WindowService {
     } else if (type == 'web') {
       contentUrl = content;
     } else if (type == 'vue') {
-      let addr = 'http://localhost:8080'
+      let addr = 'http://localhost:3000'
       if (isProd()) {
         const { mainServer } = getConfig();
         if (mainServer && mainServer.protocol && isFileProtocol(mainServer.protocol)) {

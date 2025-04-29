@@ -12,7 +12,7 @@ module.exports = {
       directory: './frontend',
       cmd: 'yarn',
       args: ['start'],
-      port: 8080,
+      port: 3000,
     },
     electron: {
       directory: './',
