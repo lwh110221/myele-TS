@@ -5,7 +5,7 @@
   "directories": {
     "output": "out"
   },
-  "asar": true,
+  "asar": false,
   "files": [
     "**/*",
     "!cmd/",
@@ -13,8 +13,7 @@
     "!electron/",
     "!frontend/",
     "!logs/",
-    "!out/",
-    "public/dist/**/*"
+    "!out/"
   ],
   "extraResources": {
     "from": "build/extraResources/",

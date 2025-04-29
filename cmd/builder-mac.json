@@ -13,8 +13,7 @@
     "!electron/",
     "!frontend/",
     "!logs/",
-    "!out/",
-    "public/dist/**/*"
+    "!out/"
   ],
   "extraResources": [
     {
