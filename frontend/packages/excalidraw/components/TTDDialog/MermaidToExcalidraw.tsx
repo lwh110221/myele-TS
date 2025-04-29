@@ -27,7 +27,7 @@ import type { BinaryFiles } from "../../types";
 import type { MermaidToExcalidrawLibProps } from "./common";
 
 const MERMAID_EXAMPLE =
-  "flowchart TD\n A[Christmas] -->|Get money| B(Go shopping)\n B --> C{Let me think}\n C -->|One| D[Laptop]\n C -->|Two| E[iPhone]\n C -->|Three| F[Car]";
+  "flowchart TD\n A[开始] -->|准备资金| B(制定计划)\n B --> C{选择方案}\n C -->|方案一| D[开发网站]\n C -->|方案二| E[开发APP]\n C -->|方案三| F[开发小程序]";
 
 const debouncedSaveMermaidDefinition = debounce(saveMermaidDataToStorage, 300);
 
