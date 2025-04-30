@@ -21,7 +21,7 @@ class AutoUpdaterService {
       linux: false,
       options: {
         provider: 'generic', 
-        url: 'http://kodo.qiniu.com/'
+        url: ''
       },
     }
   }

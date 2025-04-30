@@ -29,7 +29,7 @@ class WindowService {
       contentUrl = path.join('file://', getBaseDir(), content)
     } else if (type == 'web') {
       contentUrl = content;
-    } else if (type == 'vue') {
+    } else if (type == 'react') {
       let addr = 'http://localhost:3000'
       if (isProd()) {
         const { mainServer } = getConfig();
