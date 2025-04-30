@@ -15,6 +15,21 @@ const config: () => AppConfig = () => {
         webSecurity: false,
         allowRunningInsecureContent: true,
       }
+    },
+    httpServer: {
+      enable: true,
+      https: {
+        enable: false,
+        key: '/public/ssl/localhost+1.key',
+        cert: '/public/ssl/localhost+1.pem',
+      },
+      host: '127.0.0.1',
+      port: 7071,
+    },
+    mainServer: {
+      usePort: true,
+      protocol: 'http://',
+      indexPath: '/public/dist/index.html',
     }
   };
 };

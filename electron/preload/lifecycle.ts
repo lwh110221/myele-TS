@@ -87,12 +87,10 @@ class Lifecycle {
         logger.error('[lifecycle] Window size setting error:', err);
       }
 
-      // 确保窗口显示
       try {
         win.show();
         win.focus();
         
-        // 如果窗口仍然没有显示，强制使用其他方法显示
         if (!win.isVisible()) {
           win.setOpacity(1);
           win.moveTop();
